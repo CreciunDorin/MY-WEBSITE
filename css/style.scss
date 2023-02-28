@@ -1,0 +1,141 @@
+$color-background-body: #F6F6F6;
+$color-background-menu: rgb(255, 255, 255);
+$color-text-menu: grey;
+$color-background-text-image: rgb(110, 177, 110);
+$color-text-white: white;
+$color-border: grey;
+$color-background-footer: #222222;
+
+
+body{
+    background-color: $color-background-body;
+}
+// Menu BOX
+.nav-box{
+    background-color: $color-background-menu;
+}
+// Logo
+.logo{
+    text-align: center;
+}
+// Menu
+.nav-bar{
+    text-align: right;
+    margin-top: 27px;
+}
+.nav-bar ul li a{
+    color: $color-text-menu;
+    text-decoration: none;
+    padding: 7px 10px;
+}
+.nav-bar a:hover{
+    color:black;
+}
+// Small Menu
+.mini-nav-bar{
+    display: none;
+}
+// #Home img
+.home-img img{
+    width: 100%;
+    height: auto;
+}
+.home-img p{
+    position: absolute;
+    width: 600px;
+    height: 60px;
+    left: 160px;
+    margin-top: 100px;
+    background-color: $color-background-text-image;
+    color: $color-text-white;
+    font-size: 26px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+// Features
+.box-icon-text{
+    text-align: center;
+    margin-top: 100px;
+}
+.box-icon-text p{
+    margin: 20px 0px 10px 0px;
+}
+.galery{
+    margin: 100px 0px 30px 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $color-border;
+}
+.box-image img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.box-image p{
+    text-align: left;
+    margin-top: 5px;
+}
+
+// FROM THE BLOG
+.from-the-blog img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+// Footer
+.box-footer{
+    background-color: $color-background-footer;
+    margin-top: 100px;
+}
+
+.footer-style-text{
+    color: $color-text-white;
+    font-weight: 600;
+    font-size: 17px;
+    margin: 60px 0px 15px 0px;
+}
+
+.recent-posts p:nth-child(2)
+{
+    margin: 0;
+    padding-bottom: 5px;
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+}
+
+.recent-posts p:nth-child(3),
+.recent-posts p:nth-child(4),
+.recent-posts p:nth-child(5),
+.recent-posts p:nth-child(6){
+    margin: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $color-border;
+}
+
+.footer{
+    background-color: #111111;
+    height: 70px;
+}
+.footer p{
+    margin: 0;
+}
+
+@media (max-width: 1199px) { 
+    .nav-bar{
+        display: none;
+    }
+
+    .mini-nav-bar{
+        display: initial;
+        position: relative;
+        top: 10px;
+        right: 70px;
+        float: right;
+        border: none;
+        padding: 10px;
+        background-color: #0000;
+    }
+} 
+
+
+
